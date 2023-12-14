@@ -1,0 +1,100 @@
+
+
+
+
+.categorydisplay{
+    margin-left: 40px;
+    margin-top: 2%;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .descriptionCP{
+    width: 55%;
+    margin: auto;
+    font-size: 15px;
+    font-family: 'Arvo', sans-serif; /* Apply Arvo font and provide a fallback */
+    font-weight: bolder;
+  }
+  
+  .descriptionCPwrapper{
+    margin-top: 10%;
+    display: flex;
+    margin-left: 14%;
+  }
+  
+  
+  .dflexCC {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 100px;
+   
+  }
+  
+  
+  
+  .Barcontainer {
+    margin-top: 18%;
+    
+  }
+  
+  .category-pagecontainer{
+    align-items: center;
+    margin-left: 200px;
+    justify-content: center;
+    margin-bottom: 100px;
+  
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+  
+   
+    .descriptionCP{
+      width: 100%;
+      font-size: 17px;
+      line-height: 27px;
+    }
+  
+    .descriptionCPwrapper{
+      margin-top: 10%;
+      display: flex;
+      margin-left: 6%;
+      margin-right: 6%;
+      font-weight: lighter;
+    }
+    .Barcontainer {
+      margin-top: 13.5%;
+      
+    }
+    .category-pagecontainer {
+      margin-top: -10%;
+      margin-bottom: 50px;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .dflexCC {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 0px;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0px;
+      margin-left: -95%;
+    }
+  
+    .categorydisplay{
+      margin-left: 10px;
+      margin-top: 10%;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+  
+    .categoryheading h1{
+      font-size: 50px;
+      margin-top: 10%;
+    }
+  
+    
+  }

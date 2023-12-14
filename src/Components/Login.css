@@ -1,0 +1,71 @@
+/* Assuming the parent element of .login-container is a full-height container */
+.parent-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .login-container {
+    height: 500px;
+    width: 500px;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+  }
+  
+  .input-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .buttonLogin {
+    width: 100%;
+    padding: 10px;
+    background-color: #24245a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .buttonsCF{
+    display: flex;
+    justify-content: space-around;
+    width: 10%;
+    white-space: nowrap;
+    margin-left: 45%;
+  }
+
+  .buttonsCF button:hover{
+    color: rgb(16, 21, 99);
+  }
+  
+  .buttonLogin:hover {
+    background-color: rgb(16, 21, 99);
+  }
+
+  .WSaccount{
+    display: flex;
+  }
+
+  .WSaccountbtn{
+    margin: auto;
+  }
+  

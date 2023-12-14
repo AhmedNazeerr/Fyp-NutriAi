@@ -1,0 +1,18 @@
+.category-content{
+  padding: 0px 40px;
+  padding-top: 25px;
+}
+
+.shop-containerPS {
+  text-align: center;
+  margin: 20px;
+}
+
+
+.categoriesPS {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+}

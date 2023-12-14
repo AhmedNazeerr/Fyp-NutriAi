@@ -1,0 +1,126 @@
+.prod-Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    padding-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.prodIMG{
+   width: 80%;
+   height: 90%; 
+   margin-left: 30px;
+}
+
+.imgPC{
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+}
+.option{
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+.underline {
+    text-decoration: underline;
+}
+.shop-button {
+    background-color: #24245a; /* Set your desired background color */
+    color: lightgrey; /* Text color */
+    padding: 5px 30px; /* Adjust padding as needed */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+  }
+.img-container {
+    position: relative; /* Create a positioning context */
+    height: 100%;
+    width: 100%;
+    z-index: 0; /* Lower z-index to place it below the banner */
+    margin-bottom: -10%;
+}
+
+.banner {
+    position: absolute; /* Position the banner absolutely within the container */
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 25px;
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
+    padding: 4px 8px;
+    z-index: 1; /* Higher z-index to place it above the image */
+}
+
+.soldout{
+    background-color: grey;
+    color: white;
+    
+}
+div.soldout:before { 
+    content: "Sold Out" ; 
+}
+
+.bestselling{
+    background-color: red;
+    color: white;
+}
+
+div.bestselling:before { 
+    content: "Best Selling" ; 
+}
+
+.none{
+    display: none;
+}
+
+.detailsPC{
+    padding: 2px 40px;
+}
+
+.disc{
+    text-align: left;
+}
+
+
+
+
+.text-dull{
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+}
+
+
+
+.rating{
+    display: flex;
+    align-items: center;
+}
+
+.image-containerPC{
+    display: flex;
+}
+
+.imgTag{
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .prod-Card{
+        height: 65%;
+        width: 65%;
+        margin-top: 15%;
+    }
+}
+

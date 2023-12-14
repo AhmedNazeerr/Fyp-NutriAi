@@ -1,0 +1,275 @@
+.main-category{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 2px solid lightgrey;
+}
+
+.RV-heading{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6%;
+  padding-bottom: 2%;
+}
+
+.category-display{
+  margin-left: 40px;
+  margin-top: 2%;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.descriptionCP{
+  width: 100%;
+  /* margin: auto; */
+  font-size: 15px;
+  font-family:  sans-serif; /* Apply Arvo font and provide a fallback */
+  /* font-weight: bolder; */
+}
+
+.descriptionCP-wrapper{
+  margin-top: 7%;
+  display: flex;
+  margin-left: 8%;
+}
+
+.category-page-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 50px;
+  margin-top: -10%;
+
+}
+
+.filter-container {
+  width: 30%; /* Adjust the width as needed */
+  margin-top: 18%;
+  height: 15%;
+  margin-left: -2%;
+}
+
+.d-flexCC {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding-right: 80px; */
+  padding: 2%;
+  margin-left: -10%;
+}
+.shop-button {
+  background-color: #24245a; /* Set your desired background color */
+  color: lightgrey; /* Text color */
+  padding: 5px 30px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+}
+
+.product-cardCC {
+  width: calc(20% - 20px);
+  max-width: 240px;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: translateY(15px);
+  transition: transform 0.5s, box-shadow 0.5s;
+  animation: transform 0.2s ease-in-out;
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+}
+
+
+.Bar-container {
+  margin-top: 13.5%;
+  width: 75%; /* Adjust the width as needed */
+  height: 20%;
+}
+
+.d-flexRW {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 1px;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.product-cardRW {
+  width: calc(20% - 20px);
+  max-width: 240px;
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.paginationCP{
+  margin-top: 7%;
+  margin-left: 40%;
+}
+
+.paginationCP button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: black;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: bold;
+}
+
+.paginationCP button.active {
+  text-decoration: underline;
+  font-style: bold;
+}
+
+.paginationCP .prev-next {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.paginationCP .prev-next button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+.paginationCP .prev-next button.disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+
+@media screen and (max-width: 768px) {
+  .d-flexRW {
+    justify-content: flex-start; /* Keep the cards in a single row */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    margin-left: -20%; /* Reset the left margin */
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    gap: 100px;
+  }
+
+  .product-cardRW {
+    padding-left: 0%;
+    padding-right: 20%;
+  }
+
+  .RV-heading{
+    font-size: 50px;
+  }
+
+  .descriptionCP{
+    width: 100%;
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .descriptionCP-wrapper{
+    margin-top: 10%;
+    display: flex;
+    margin-left: 6%;
+    margin-right: 6%;
+    font-weight: lighter;
+  }
+
+  .category-page-container {
+    margin-top: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .d-flexCC {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0px;
+    margin-left: -95%;
+  }
+
+  .category-display{
+    margin-left: 10px;
+    margin-top: 10%;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .category-heading h1{
+    font-size: 50px;
+    margin-top: 10%;
+  }
+
+  .paginationCP{
+    margin-top: 7%;
+    margin-left: -10%;
+  }
+  
+.Bar-container {
+  margin-top: 13.5%;
+  width: 65%; /* Adjust the width as needed */
+  height: 20%;
+}
+  
+}
+
+@media (min-width :1600px) {
+
+  
+.filter-container {
+  width: 35%; /* Adjust the width as needed */
+  margin-top: 18%;
+  height: 15%;
+  margin-left: 5%;
+}
+
+
+.Bar-container {
+  margin-top: 13.5%;
+  width: 65%; /* Adjust the width as needed */
+  height: 20%;
+}
+
+.d-flexCC {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* padding-right: 80px; */
+  padding: 5%;
+  margin-left: -10%;
+}
+
+
+  
+}

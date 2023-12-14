@@ -1,0 +1,206 @@
+
+
+.order-summary-bar {
+  position: sticky; /* Add this line to make it sticky */
+  top: 0; /* Stick it to the top of the viewport */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-family: 'Arvo', sans-serif;
+  z-index: 1; /* Add z-index to ensure it's above other content */
+}
+  
+  .section {
+    margin-bottom: 20px;
+    padding: 10px; /* Add padding to all sections */
+  }
+
+  .IST{
+    margin-top: -10%;
+    font-family: 'Arvo', sans-serif;
+  }
+
+  .order-summary-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .lock-symbol {
+    font-size: 20px;
+    filter: grayscale(100%);
+    margin-top: -5%;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .coupon {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Add padding to the coupon section */
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-top: none; /* Remove top border from the coupon section */
+    border-bottom: 1px solid #ccc; /* Add bottom border to the coupon section */
+    border-top: 1px solid #ccc; /* Add bottom border to the coupon section */
+  }
+  
+  .coupon-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: -8%;
+  }
+
+  .cart-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: -1%;
+  }
+  
+  .coupon-input {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between; /* Add space between input and button */
+    align-items: center; /* Vertically center align input and button */
+  }
+  
+  .coupon-input input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Add rounded corners to the input */
+    width: 50%; /* Set the input width to 50% */
+  }
+  
+ .coupon-input .apply-button {
+  background-color: #24245a;
+  color: white;
+  border: none;
+  padding: 5px 20px; /* Increase the padding to make the button wider */
+  margin-left: 10px; /* Add space between input and button */
+  cursor: pointer;
+  border-radius: 20px; /* Add rounded sides to the button */
+  transition: background-color 0.3s; /* Add a smooth transition for color change */
+  width: 40%;
+  height: 80%;
+}
+  
+  .coupon-input .apply-button:hover {
+    background-color: black; /* Change the background color to black on hover */
+  }
+
+  
+  .coupon-input.slide-down {
+    animation: slideDown 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  /* Keyframes for the slide-down animation */
+  @keyframes slideDown {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 100px; /* You can adjust the height as needed */
+    }
+  }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rowIST {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+.label {
+  font-weight: bold;
+  flex: 1;
+}
+
+.value {
+  text-align: right;
+  flex: 1;
+}
+
+/* ... (previous CSS) ... */
+
+.cart{
+    border-bottom: 1px solid #ccc; /* Add bottom border to the coupon section */
+    padding-bottom: 3%;
+    margin-top: -4%;
+    padding-top: 20px;
+}
+
+.cart-content {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .cart-label{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-item {
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'Arvo', sans-serif;
+  }
+  
+  .product-image {
+    width: 80px; /* Adjust the image size as needed */
+    height: 80px; /* Adjust the image size as needed */
+    margin-right: 10px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .product-quantity {
+    color: #888;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    text-align: right;
+  }
+
+
+.cart-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .cart-content.open {
+    max-height: 500px; /* Adjust the max height to your desired value */
+    transition: max-height 0.3s ease-in;
+  }
+  
+  

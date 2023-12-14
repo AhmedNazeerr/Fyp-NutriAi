@@ -1,0 +1,412 @@
+/* CheckoutPage.css */
+.Parent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  
+  .SecureCheckout {
+    flex: 60%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 6%;
+    margin-left: 5%;
+  }
+
+  .SecureCheckout h2{
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .checkout-heading {
+    padding-bottom: 10px;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contact-info h3{
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 5%;
+    margin-top: -5%;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .input-container label {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    font-size: 12px;
+    color: black;
+    pointer-events: none;
+    transition: top 0.2s, font-size 0.2s;
+    font-family: "Arvo", sans-serif;
+  }
+  
+  .input-container.focused label {
+    top: -15px;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+  
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 20px;
+  }
+  
+  label {
+    font-size: 12px;
+  }
+
+  .OrderSummary {
+    flex: 40%; /* 40% of the parent's width */
+    padding: 20px; /* Adjust the padding as needed */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    background-color: #f2f2f2;
+    margin-right: 5%;
+  }
+
+  .address-display{
+    margin-left: 3px;
+    font-family: 'Arvo', sans-serif;
+    margin-bottom: 7%;
+  }
+
+  .address-display h6{
+    font-size: 12px;
+  }
+
+  .FL-container{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .CPZ-container{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .shipping-method {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .shipping-method h3 {
+    margin-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  .shipping-info h3{
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    
+    .option{
+
+      font-size: 5px;
+    }
+
+  }
+  
+  
+  .shipping-option {
+    
+    align-items: center;
+    border: 1px solid #000;
+    padding: 4px;
+    padding-top: 2.5%;
+    padding-right: 2%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-weight: bold; */
+  }
+
+  .shipping-option:hover {
+    background-color: #e0e0e0; /* Change this to the color you want on hover */
+    /* You can add other styles for the hover state as well */
+  }
+
+  .el1 input[type="radio"] {
+    /* Increase the size of the radio button */
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    /* margin-top: 1%; */
+    margin-right: 5%;
+    margin-left: 10%;
+  }
+
+  /* Style for the checked state of the radio button */
+  .el1 input[type="radio"]:checked {
+    /* Add your styling for the checked state here */
+    border: 2px solid #007bff; 
+    /* Example border color for checked state */
+  }
+
+  .el2 {
+    /* font-weight: bold; */
+    font-size: 80%;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-left: 10%;
+    margin-top: 1.2%;
+  }
+
+/*   
+  .shipping-option label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    font-family: "Arvo", sans-serif;
+    margin-left: 1%;
+    font-weight: bold;
+  }
+  
+  .shipping-label {
+    flex: 1;
+  }
+  
+  .shipping-cost {
+    flex-shrink: 0;
+    padding-left: 10px;
+  } */
+  
+  .checkbox label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "Arvo", sans-serif;
+  }
+
+  .CITY-INPUT{
+    width: 30%;
+  }
+
+  .ZIP-INPUT{
+    width: 30%;
+  }
+
+  .province-dropdown{
+    padding: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10%;
+    font-family: "Arvo", sans-serif;
+    flex: 1;
+    font-size: 12px;
+    color: black;
+  }
+
+  .roundbutton-checkout {
+    width: 300px;
+    height: 40px;
+    margin: auto;
+    background-color: #24245a;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Half of the height for rounded ends */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    font-family: 'Arvo', sans-serif;
+    font-size: 80%;
+  }
+
+  .Checkout-Button{
+    margin-right: 3%;
+  }
+
+  
+  .Checkout-Button:hover{
+    background-color: rgb(16, 21, 99);
+    margin-right: 3%;
+    border-radius: 5px;
+  }
+
+  .roundbutton-checkout:hover {
+    background-color: rgb(16, 21, 99);
+    border-radius: 5px;
+  }
+  
+  .locksymbol-checkout {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+  }
+
+  .Buttons-Section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  .back-link{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .back-link:hover{
+    color: #24245a;
+  }
+
+  .back-icon{
+    margin-right: 6%;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .SecureCheckout {
+      box-sizing: border-box;
+      height: 100%;
+      padding-left: 0%;
+      padding-right: 0%;
+      margin-left: 0%;
+      padding: 10%;
+    }
+    .Checkout-Button{
+      /* width: 100%; */
+      height: 70%;
+    
+    }
+    
+
+    .roundbutton-checkout{
+      width: 120px;
+      height: 50px;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      
+    }
+
+    .Buttons-Section{
+      width: 100%;
+      flex-direction: column-reverse;
+      gap: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .BackToCart{
+      margin: auto;
+    }
+
+    .collapsible {
+      margin-top: 5%;
+    }
+    
+    .collapsible.open .collapsible-content {
+      display: block;
+    }
+    
+    .collapsible-header {
+      display: flex;
+      align-items: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      cursor: pointer;
+      padding-left: 35px;
+      padding-right: 35px;
+    }
+    
+    .cart-icon {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    
+    .plus-sign {
+      font-size: 25px;
+      margin-left: auto;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    .collapsible-content {
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease-in; 
+    }
+    .collapsible-content.expanded {
+      max-height: 1000px; 
+      margin-top: 5px; 
+    }
+
+    .showOS{
+      font-family: "Bebas Neue", sans-serif;
+    }
+
+    .Parent {
+      flex-direction: column;
+    }
+
+    .OrderSummary {
+      width: 100%;
+      background-color: #f2f2f2;
+    }
+
+      .FL-container {
+        gap: 10px;
+    }
+
+    .collapsibleOS {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s ease-in; 
+      margin: 0;
+      padding: 0;
+    }
+    
+    .collapsibleOS.expanded {
+      max-height: 1000px; 
+    }
+
+    .collapsibleOS {
+      list-style: none;
+      padding: 0;
+    }
+    .roundbutton-checkout{
+      width: 220px;
+    }
+  }

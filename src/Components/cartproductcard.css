@@ -1,0 +1,85 @@
+.iconDiv {
+    position: relative; /* Establish positioning context */
+}
+
+.mainDiv {
+    height: 300px;
+    width: 270px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 0.9em;
+    font-family: 'Arvo', sans-serif;
+    margin: 20px;
+    margin-bottom: 10%;
+}
+
+.heartsymbol {
+    color: white;
+   position: absolute;
+    top: 0; /* Adjust the vertical positioning as needed */
+    right: 0; /* Align to the right side of the parent div */
+}
+
+.heartsymbol svg {
+    fill: white; /* Fills the inner part of the heart with white */
+    stroke: black; /* Sets the border color to black */
+    stroke-width: 20px; /* Adjust the border width as needed */
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    /* Add any other styles you need for .imgDiv */
+    margin-bottom: 20px;
+}
+
+.addbutton {
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    background-color: white;
+    color: grey;
+    border-color: grey;
+    border-radius: 25px; /* Half of the height for rounded ends */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    font-family: 'Arvo', sans-serif;
+    transition: all 0.3s; /* Add transition for smooth hover effect */
+  }
+
+  .addbutton:hover {
+    width: 150px; /* Increase width */
+    background-color: black; /* Change background color to black */
+    color: white; /* Change text color to white */
+  }
+  
+
+  .nameDiv{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .pprice{
+    display: flex;
+    font-size: 0.9em;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.pprice1{
+    flex: 50%;
+    color:black;
+}
+.pprice2{
+    flex: 50%;
+    text-decoration: line-through;
+}

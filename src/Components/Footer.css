@@ -1,0 +1,218 @@
+.footerW {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+    max-width: 100%;
+    font-family: 'Avalon', sans-serif;
+    height: 300px;
+    border-top: 1px solid lightgrey;
+    padding-top: 5%;
+    margin-top: -5%;
+    margin-bottom: 10%;
+  }
+  
+  .columnF {
+    flex: 1;
+    padding: 0 20px;
+    margin-left: 15px;
+    color: #333;
+  }
+
+  .columnF p{
+    font-size: 16px;
+    margin-top: 7%;
+    margin-bottom: 2%;
+  }
+  
+  .logo {
+    margin-top: 0px;
+    max-width: 130px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .heading{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .email-input {
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .email-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .email-input label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #aaa;
+    pointer-events: none;
+    transition: top 0.2s, font-size 0.2s;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  .email-input.focused label {
+    top: -13px;
+    font-size: 10px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .social-icons {
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .facebook {
+    width: 30px;
+    height: 30px;
+ 
+    margin-right: 10px;
+  }
+  .instagram {
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 10px;
+  }
+  .linkedin {
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 10px;
+  }
+  .tiktok {
+    width: 30px;
+    height: 30px;
+    
+    margin-right: 10px;
+  }
+  .youtube {  
+    width: 30px;
+    height: 30px; 
+    margin-right: 10px;
+  }
+  .quick-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .quick-links li {
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .quick-links li:hover {
+    text-decoration: underline;
+  }
+
+  .li{
+    color: black;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .footerW {
+      display: block;
+      text-align: center;
+      margin-left: 0;
+      margin-top: 30px;
+      height: fit-content;
+    }
+
+    #lgr{
+      margin-top: 2%;
+      margin-left: -5%;
+    }
+    
+    .wrap{
+      display: flex;
+    }
+
+
+    .columnF {
+      padding: 20px 0;
+      margin: 0;
+    }
+
+    .columnF p{
+      margin-top: 1%;
+      width: 85%;
+      margin-left: 7%;
+    }
+  
+    .email-input {
+      margin-top: 25px !important;
+    }
+    
+    .email-input input {
+      padding: 8px;
+      width: 80%;
+      margin-left: 2%;
+    }
+    .email-input label {
+      margin-left: 10%;
+      margin-top: -1%;
+      font-family: "Bebas Neue", sans-serif;
+    }
+    
+    .social-icons {
+      margin: auto;
+      margin-top: 30px;
+    }
+    
+    .social-icon {
+      margin-right: 5px;
+    }
+    
+    .heading{
+      margin-top: -3%;
+      width: 100%;
+    }
+    .heading p{
+     margin-left: 10%;
+    }
+
+    .CollapseMenu{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .CollapseHeader1,
+    .CollapseHeader2,
+    .CollapseHeader3 {
+      margin: auto;
+      padding: 15px 0; 
+      border-bottom: 1px solid black; 
+      width: 90%;
+    }
+    
+    .credits {
+      text-align: center;
+      margin-top: 10%;
+      font-size: 14px;
+      color: black;
+      margin-bottom: 10%;
+      font-family: 'Avalon', sans-serif;
+    }
+
+    .credits span {
+      font-size: 18px;
+      margin-right: 5px;
+    }
+    
+    .cr{
+      margin-left: -15%;
+    }
+  }
+  

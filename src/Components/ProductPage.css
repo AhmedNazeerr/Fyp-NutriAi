@@ -1,0 +1,92 @@
+  .FBW-heading{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 2%;
+  }
+
+
+
+
+
+  .d-flexPP {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1px;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .product-cardPP {
+    width: calc(20% - 20px);
+    max-width: 240px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .Section-Container{
+    margin-bottom: 70px;
+    padding-bottom: 10px;
+    margin-top: 5%;
+  }
+
+  .ReviewsPP-wrapper{
+    margin-top: 5%;
+    margin-bottom: 100px;
+  }
+
+  .product-display{
+    margin-left: 40px;
+    margin-top: 1%;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .product-display  h2{
+    font-size: 21px;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .d-flexPP {
+      justify-content: flex-start; /* Keep the cards in a single row */
+      overflow-x: scroll; /* Enable horizontal scrolling */
+      margin-left: -45%; /* Reset the left margin */
+      flex-wrap: nowrap;
+      overflow-y: hidden;
+      gap: 100px;
+    }
+  
+    .product-cardPP {
+      padding-left: 25%;
+    }
+
+   /* .product-cardMLT {
+        padding-left: 25%;
+      }
+  */
+    .FBW-heading{
+      font-size: 50px;
+    }
+
+    .product-display{
+      margin-top: 5%;
+    }
+
+    
+}

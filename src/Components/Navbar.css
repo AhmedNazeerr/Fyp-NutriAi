@@ -1,0 +1,350 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sticky + body {
+  padding-top: 102px;
+}
+
+#FullNavbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  opacity: 1;
+  z-index: 1000;
+  position: sticky;
+  top:0 ;
+}
+/* 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  background-color: white;
+  animation: fadeInDelay 0.5s ease forwards;
+} */
+
+
+
+.sticky.fade-in {
+  opacity: 0; /* Start with opacity 0 to hide the cards initially */
+  /* animation: fadeInDelay 0.5s ease forwards; 
+} 
+
+
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.stickyRes {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+  animation: fadeInDelay 0.5s ease forwards;
+  height: 55px;
+}
+
+
+
+.stickyRes.fade-in {
+  opacity: 0; /* Start with opacity 0 to hide the cards initially */
+  /* animation: fadeInDelay 0.5s ease forwards; /* Apply animation with delay to fade in the cards */
+}
+
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-left {
+  flex: 1;
+  height: 50px;
+  /* padding:4px; */
+  margin-bottom: 5%;
+  margin-left: 1%;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 0.5%;
+}
+
+.logoS {
+  width: 150px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 0.5px;
+}
+
+.location {
+  width: 80px;
+  height: auto;
+  margin-left: 10%;
+  margin-top: -50%;
+}
+
+.navbar-middle {
+  flex: 3;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  margin-top: -2.5%;
+  margin-left: 2%;
+}
+
+.navbar-middle input[type="text"] {
+  width: 85%;
+  padding: 8px;
+  font-size: 16px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  border: 2px solid #24245a;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.search-bar input[type="text"] {
+  width: 90%;
+  padding: 8px;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  font-size: 16px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  border: 2px solid #24245a;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -2.5%;
+}
+
+.login-btn,
+.cart-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Bebas Neue";
+  font-weight: 550;
+}
+.location-btn-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Bebas Neue";
+  font-weight: 550;
+  margin-left: 20%;
+  margin-top: -10%;
+}
+
+.cart-btn-text {
+  margin-left: 7.5%;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: larger;
+}
+
+.menu-item:hover {
+  color: skyblue;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  height: 250px;
+  width: 100%;  
+}
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar-menu {
+  justify-content: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  background-color: #24245a;
+  margin-top: -1.5%;
+  border-top: 2px solid #24245a;
+}
+
+/* CustomModal.css */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.custom-modal {
+  left: -10px;
+  top: -10px;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bebas Neue", sans-serif;
+  z-index: 2001;
+  position: fixed;
+  animation: slideIn 0.3s ease-in-out forwards; 
+}
+
+.custom-modal.hidden {
+  animation: slideOut 0.3s ease-in-out forwards;
+  left: -100%;
+}
+
+
+
+.modal-dialog {
+  width: 75% !important;
+}
+
+.modal-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #24245a;
+  display: flex;
+  align-items: center;
+}
+
+.close-button {
+  cursor: pointer;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 15px;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 16px;
+  color: #24245a;
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+.button-text {
+  margin-left: 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#Lg{
+  width: 65px;
+  height: auto;
+  margin-top: -45%;
+  margin-left: -10%;
+}
+
+#crt{
+  margin-left: 50%;
+  margin-top: -40%;
+}
+
+.search-bar_rs input[type="text"] {
+  width: 90%;
+  padding: 8px;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  font-size: 16px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  border: 2px solid #24245a;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.search-bar_rs {
+  margin-top: -4%;
+  padding-left: 10%;
+}
+
+.login-button,
+.store-button, .modal-footer .btn-primary {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #24245a;
+  justify-content: flex-start;
+}

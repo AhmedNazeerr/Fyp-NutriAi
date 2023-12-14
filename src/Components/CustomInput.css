@@ -1,0 +1,36 @@
+/* Add these styles to your CSS file */
+
+.input-container {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .input-container.focused input {
+    border-color: #0078d4; /* Change the border color when focused */
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+   
+  }
+  
+  .input-container.invalid input {
+    border-color: red; /* Change the border color for invalid inputs */
+    border-width: 1px;
+  }
+  
+  .input-container.valid input {
+    border-color: green; /* Change the border color for valid inputs */
+    border-width: 2px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  

@@ -1,0 +1,241 @@
+
+
+.order-summary-bar {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arvo', sans-serif;
+    font-size: 0.9rem;
+  }
+
+  .section-order-summary{
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin: 0;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    padding: 10px; /* Add padding to all sections */
+  }
+
+  .IST{
+    margin-top: -10%;
+    font-family: 'Arvo', sans-serif;
+  }
+
+  .order-summary-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .lock-symbol {
+    /*font-size: 20px;*/
+    filter: grayscale(100%);
+    margin-top: -5%;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .coupon {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Add padding to the coupon section */
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-top: none; /* Remove top border from the coupon section */
+    border-bottom: 1px solid #ccc; /* Add bottom border to the coupon section */
+    border-top: 1px solid #ccc; /* Add bottom border to the coupon section */
+  }
+  
+  .coupon-toggle {
+    border: none;
+    background: none;
+    cursor: pointer;
+    /*font-size: 20px;*/
+    margin-left: auto;
+    margin-top: -8%;
+  }
+  
+  .coupon-input {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-between; /* Add space between input and button */
+    align-items: center; /* Vertically center align input and button */
+  }
+  
+  .coupon-input input {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Add rounded corners to the input */
+    width: 50%; /* Set the input width to 50% */
+  }
+  
+ .coupon-input .apply-button {
+  background-color: #24245a;
+  color: white;
+  border: none;
+  padding: 5px 20px; /* Increase the padding to make the button wider */
+  margin-left: 10px; /* Add space between input and button */
+  cursor: pointer;
+  border-radius: 20px; /* Add rounded sides to the button */
+  transition: background-color 0.3s; /* Add a smooth transition for color change */
+  width: 40%;
+  height: 80%;
+}
+  
+  .coupon-input .apply-button:hover {
+    background-color:rgb(16, 21, 99); /* Change the background color to black on hover */
+  }
+
+  
+  .coupon-input.slide-down {
+    animation: slideDown 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  /* Keyframes for the slide-down animation */
+  @keyframes slideDown {
+    0% {
+      max-height: 0;
+    }
+    100% {
+      max-height: 100px; /* You can adjust the height as needed */
+    }
+  }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rowIST {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+.label {
+  font-weight: bold;
+  flex: 1;
+}
+
+.value {
+  text-align: right;
+  flex: 1;
+}
+
+
+.roundbutton {
+    width: 400px;
+    height: 40px;
+    margin: auto;
+    background-color: #24245a;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Half of the height for rounded ends */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .roundbutton:hover {
+    background-color:rgb(16, 21, 99);
+  }
+  
+  /* CSS for the lock symbol */
+  .locksymbol {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+  }
+  
+  .section-note{
+    font-size: 0.9em;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: 'Arvo', sans-serif;
+  }
+
+  .section-note p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4em;
+  }
+
+  
+  @media screen and (max-width: 768px) {
+    .roundbutton {
+      width: 250px;
+      height: 40px;
+      margin: auto;
+      background-color: #24245a;
+      color: white;
+      border: none;
+      border-radius: 5px; /* Half of the height for rounded ends */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0;
+    }
+    .roundbutton:hover {
+      background-color:rgb(16, 21, 99);
+    }
+    .StickyCheckoutBtnLarge{
+      border-radius: 5px;
+    }
+    .StickyRoundButtonLarge{
+      border-radius: 5px;
+    }
+  }
+
+
+
+  /* for checkout btn  */
+
+
+  .StickyCheckoutBtnLarge {
+    background-color: white;
+    /* position: fixed; */
+    /* bottom: 0; */
+    width: 100%;
+    z-index: 2000;
+    padding: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    font-family: 'Arvo', sans-serif;
+    padding-bottom: 0px;
+    margin-top: 2%;
+    border-radius: 4px;
+}
+
+.StickyRoundButtonLarge {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    background-color: #24245a;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Half of the height for rounded ends */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .StickyRoundButtonLarge:hover {
+    background-color: rgb(16, 21, 99);
+  }
+

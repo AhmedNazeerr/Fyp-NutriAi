@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Avalon';
+    src: url('./fonts/avalon-font-file.woff2') format('woff2'),
+         url('./fonts/avalon-font-file.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }

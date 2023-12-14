@@ -1,0 +1,115 @@
+/* Default styles for all screen sizes */
+
+.imgTOP-container img {
+  width: 100%;
+  height: auto;
+}
+
+.imgTOP-container {
+  margin-bottom: 5%;
+}
+
+.wholesale-display {
+  margin-top: -3%;
+  font-family: 'Bebas Neue', sans-serif;
+  color: black;
+  margin-bottom: 2%;
+  margin-left: 2%;
+}
+
+.wholesale-display h2 {
+  font-size: 14px;
+}
+
+.wholesale-page {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  align-items: center;
+  margin: 20px;
+}
+
+.contentWholesale {
+  flex: 4;
+  padding-left: 20px;
+  white-space: pre-wrap;
+  font-family: 'Arvo', sans-serif;
+  
+}
+
+.InfoRulesWholesale {
+  margin: auto;
+  width: 100%; /* Adjusted width for smaller screens */
+}
+
+.InfoRulesWholesale h1 {
+  font-size: 40px; /* Adjusted font size for smaller screens */
+  text-align: center;
+  margin-left: 0; /* Reset margin for centering */
+}
+
+.WholesaleHeading {
+  white-space: normal; /* Reset white-space property */
+  margin-bottom: 5%;
+}
+
+.FormWholesale {
+  margin-top: 0; /* Reset margin top for smaller screens */
+  padding: 20px; /* Adjusted padding for smaller screens */
+  margin-bottom: 5%; /* Reset margin bottom for smaller screens */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.roundbutton-wholesale {
+  width: 45%;
+  height: 43px;
+  background-color: #24245a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'Arvo', sans-serif;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  font-size: 80%;
+  
+}
+
+.roundbutton-wholesale:hover {
+  
+  background-color: rgb(16, 21, 99);
+}
+
+/* Media query for screens with a maximum width of 768 pixels (typical mobile devices) */
+@media screen and (max-width: 768px) {
+
+  .roundbutton-wholesale{
+
+    width: 60%;
+  }
+
+  .wholesale-page {
+      margin: 10px; /* Adjusted margin for smaller screens */
+  }
+
+  .InfoRulesWholesale {
+      width: 100%; /* Adjusted width for smaller screens */
+  }
+
+  .InfoRulesWholesale h1 {
+      font-size: 30px; /* Adjusted font size for smaller screens */
+  }
+
+  .FormWholesale {
+      padding: 10px; /* Adjusted padding for smaller screens */
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+}

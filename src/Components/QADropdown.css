@@ -1,0 +1,42 @@
+.qa-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qa-item {
+  margin-bottom: 10px;
+ 
+  overflow: hidden;
+}
+
+.qa-item.open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.qa-question {
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically center the text and icon */
+  justify-content: space-between; /* Put space between text and icon */
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+.dropdown-icon {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.qa-answer {
+  font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    width: 100%; /* Set the width to 100% */
+    background-color: #fff;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px; /* You can adjust the padding as needed */
+}

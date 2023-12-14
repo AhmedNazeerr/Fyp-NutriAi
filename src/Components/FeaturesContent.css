@@ -1,0 +1,24 @@
+.features{
+    text-align: left;
+}
+.features h1{
+    font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  justify-content: left;
+  text-align: left;
+
+}
+.features p{
+
+ font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  justify-content: left;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+image{
+  width:50px;
+}
+}

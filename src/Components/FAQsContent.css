@@ -1,0 +1,22 @@
+/* FAQsContent.css */
+
+.qa-container {
+    text-align: left;
+  }
+  
+  .qa-dropdown {
+    margin-bottom: 10px; /* Reduce spacing between question-answer pairs */
+    margin-right: 40px;
+  }
+  
+  .qa-question {
+    font-weight: bold;
+    
+  }
+  
+  .qa-answer {
+    margin-top: 5px;
+    font-size: 14px; /* Decrease the font size of the answer */
+    font-family: 'Bebas Neue', sans-serif; /* Change the font to Bebas Neue */
+  }
+  

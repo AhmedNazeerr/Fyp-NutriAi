@@ -1,0 +1,320 @@
+/* ProductViewer.css */
+.product-viewer-flex-column{
+
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+   
+}
+
+.product-viewer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .product-viewer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .image-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5%;
+  }
+  
+  .image-column img {
+  
+    height: 7%; /* Maintain the aspect ratio */
+    width: 63px; /* Set a maximum width if needed */
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .image-column img.selected {
+    border-color: #007bff; /* Highlight the selected image */
+  }
+  
+  .product-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjust alignment to place details on the right */
+  }
+  
+  .big-image-container {
+    flex: 1; /* Make the selected image take up half the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    max-width: 530;
+    max-width: 530;
+  }
+  .big-image-container2 {
+   /* Make the selected image take up half the page */
+   flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    margin-left: 5%;
+  }
+  .big-image2 {
+    max-width: 320px;
+    max-height: 320px;
+    /* margin-left: %; */
+    margin-bottom: 30px;
+  }
+  
+  .detailsVI {
+    text-align: left;
+    margin-right: 200px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 5%;
+  }
+  
+  .detailsVI h2 {
+    font-family: 'Bebas Neue', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5%;
+  }
+  
+  .ratingsVI {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stars {
+    color: gold;
+    font-size: 24px;
+  }
+  
+  .total-reviewsVI {
+    margin-left: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .price {
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+ 
+  
+  
+  .discount-tag {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    color: #ffffff; /* Green color for discount */
+ 
+    background-color: #24245a;
+    padding: 3px 10px;
+    display: inline-block;
+  }
+  
+  .product-code {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .sizes {
+    display: flex;
+    margin-top: 10px;
+
+  }
+  
+  .size {
+    margin-right: 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .size img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .stock-status {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #28a745; /* Green color for in stock, you can change to red for out of stock */
+    font-family: 'Bebas Neue', sans-serif;
+}
+  
+ #addtocart {
+    background-color: #24245a;
+    color: #fff;
+    border: none;
+    width: 60%;
+    /* height: 50%; */
+
+    padding: 3% 10%;
+    /* padding: 8px 50px; */
+    /* padding: 5%; */
+    margin-top: 10%;
+    font-size: 100%;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  #addtocart:hover {
+    background-color: rgb(16, 21, 99);
+  }
+  .sale-price {
+    color: red;
+    margin-right: 5px;
+    font-size: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: -5px;
+  }
+  .price {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+  }
+  .image-row {
+    /* display: flex; */
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; /* Align images vertically in the middle */
+    padding-right: 2%; /* Optional padding between images */
+  }
+  
+  .image-row img {
+    width: 50px;
+    cursor: pointer;
+    margin-right: 2px; /* Optional margin between images */
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .image-row img.selected {
+    border-color: #007bff; /* Highlight the selected image */
+  }
+
+  @media screen and (max-width: 768px) {
+    .detailsVI h2{
+      font-size: 34px;
+    }
+
+    .detailsVI{
+      margin-top: 5%;
+    }
+
+    #addtocart{
+
+      width: 80%;
+      padding-top: 4%;
+      padding-bottom: 4%;
+
+    }
+
+}
+
+
+
+
+.image-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  /* top: 50%; */
+  transform: translateY(-50%);
+  width: 30rem;
+  height: 10rem;
+}
+
+.arrow-button {
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333; /* Color of the arrow icons */ 
+  margin: 0 10px;
+  outline: none;
+  background-color: #fff;
+}
+
+.arrow-button:hover {
+  color: rgb(16, 21, 99); /* Color when hovering over the arrow icons */
+}
+
+/* @media (min-width:1024) {
+
+  .image-navigation{
+    width: 70%;
+  }
+  
+} */
+/* 
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+  .detailsVI{
+    margin-right: 0;
+  }
+  .image-navigation{
+    /* background-color: red; */
+    /* width: 45%; */
+  /* } */
+/* } */ 
+
+/* 
+@media screen and (max-width: 1024px) and (min-width: 881px) {
+  .detailsVI{
+    margin-right: 0;
+  }
+  .image-navigation{
+    /* background-color: red; */
+    /* width: 45%; */
+  /* } */
+/* }  */
+
+.flex-column{
+  flex-direction: row;
+}
+
+@media screen and (max-width: 881px) and (min-width: 400px) {
+  .flex-column{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 200px) {
+  .big-image2 {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: 40%;
+}
+}
+/* 
+@media screen and (max-width:1366px) and (min-width:1042) {
+
+  .big-image-container{
+
+    
+  }
+
+ 
+} */

@@ -1,0 +1,198 @@
+.review-slider {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --current-index: 0;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .slider-content {
+    display: flex;
+    justify-content: flex-start;
+    width: 95%; 
+    margin-bottom: 20px;
+    animation: fadeInAnimation 0.5s ease forwards;
+    margin-right: 5%;
+    gap: 60px;
+  }
+  .product-title{
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 10px;
+  }
+  .review-card {
+    border:0;
+    padding: 20px;
+    border-radius: 5px;
+  
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(15px);
+    transition: transform 0.5s, box-shadow 0.5s;
+    animation: transform 0.2s ease-in-out;
+  }
+  .review-card.fadein {
+    opacity: 1;
+    animation: fadeInAnimation 1s ease forwards;
+  }
+  
+  .fadeout {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .fadein {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    color: gold;
+  }
+  
+  .date {
+    font-size: 12px;
+  }
+  
+  .product-info {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .product-image {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .product-title {
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+    color:grey;
+  }
+  
+  .product-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    margin-top: -10px;
+    color: grey;
+  }
+  
+  .review-text {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: grey;
+    font-size: 14px;
+  }
+  
+  .reviewer-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 2px;
+    align-items: right;
+    margin-top: auto; 
+  
+   
+  }
+  
+  .slider-heading{
+    justify-content: left;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+  }
+  .slider-controls {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 95%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid lightgrey;
+    margin-right: 6%;
+    padding-bottom: 0.5%;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .total-reviews {
+    font-size: 12px;
+    margin-left: 63%;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 0.3%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slider-content {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .review-card {
+      width: 100%; /* Adjust as needed */
+      margin-left: 20px;
+    }
+  
+    .slider-controls {
+      justify-content: center;
+      flex-direction: column; /* Stack navigation controls vertically */
+      align-items: center;
+    }
+  
+    .total-reviews {
+      margin: 5px 0; /* Add margin for spacing */
+    }
+  
+    .slider-heading {
+      font-size: 24px;
+      margin-right: 0; /* Reset margin */
+    }
+  
+    .slider-controls {
+      border-bottom: 0;
+    }
+  
+    .navigation{
+      gap: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .review-card {
+      width: 90%; /* Adjust as needed */
+    }
+  }
+  
+  

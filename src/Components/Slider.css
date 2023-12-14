@@ -1,0 +1,25 @@
+.carousel {
+    max-height: 550px; /* Adjust the maximum height as desired */
+    margin: 0 auto; /* Center the carousel horizontally */
+    overflow: hidden; /* Hide any overflow content */
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex; /* Use flex display for the carousel items */
+    align-items: center; /* Center the items vertically */
+  }
+  
+  
+  .carousel-item img {
+    max-height: 100%; /* Make sure the image height fits within the carousel item */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  @media (max-width: 768px) {
+    .carousel {
+      margin-top: 5%;
+    }
+  }
+
+

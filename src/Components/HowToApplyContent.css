@@ -1,0 +1,14 @@
+.directions h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    justify-content: left;
+    text-align: left;
+}
+.directions li{
+    
+ font-family: 'Open Sans', sans-serif;
+ font-size: 20px;
+ justify-content: left;
+ text-align: left;
+}
