@@ -1,0 +1,224 @@
+.blog-post {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .date {
+    font-family: 'Arvo', sans-serif;
+    margin-top: -70%;
+    font-size: 14px;
+  }
+
+  .blog-display{
+    margin-top: -3%;
+    font-family: 'Bebas Neue', sans-serif;
+    color: grey;
+    margin-bottom: 2%;
+  }
+
+  .blog-display  h2{
+    font-size: 14px;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.PC-BLOG{
+    margin-top: 5%;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.title-content-blog{
+    width: 100%;
+}
+
+.left-content {
+    width: 50%;
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+.left-content h1{
+    font-size: 60px;
+    padding-right:15px;
+    text-align: left;
+}
+
+.left-content p{
+    font-size: 18px;
+    font-family: 'Arvo', sans-serif;
+}
+
+.right-content {
+    width: 50%;
+    text-align: center;
+    
+}
+
+.right-content img{
+    max-width: 100%;
+    height: auto;
+}
+
+  .content {
+    flex: 4;
+    padding-left: 20px; /* Add left padding to create separation */
+    white-space: pre-wrap;
+    font-family: 'Arvo', sans-serif;
+  }
+
+  .centralize-heading{
+    margin: auto;
+  }
+
+  .content-one{
+    margin: auto;
+    width: 50%;
+  }
+  .content-two{
+    margin: auto;
+    width: 50%;
+  }
+  .content-three{
+    margin: auto;
+    width: 50%;
+  }
+  
+  h2 {
+    font-size: 34px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+
+  .Continue-Reading{
+    background-color:whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 5%;
+  }
+
+  .Continue-Reading h1{
+    font-size: 55px;
+  }
+  
+  .continue-blogs{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .BP-image{
+    position: relative;
+    width: 120%;
+    max-width: 250px; /* Adjust the width as needed */
+    margin-right: 30px;
+    cursor: pointer;
+  }
+
+  .BP-image img{
+    width: 100%;
+    height: auto;
+  }
+
+  .BP-title{
+    margin-top: 5%;
+    font-family: 'Arvo', sans-serif;
+    font-weight: bolder;
+  }
+  /* Original styles */
+
+/* ... (Your existing styles) ... */
+
+/* Media query for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Update styles for smaller screens */
+
+  .blog-post {
+    flex-direction: column;
+    margin: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .date {
+    margin-top: 0;
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .blog-display {
+    margin-top: 0;
+    margin-bottom: 1%;
+  }
+
+  .blog-display h2 {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+
+  .flex-container {
+    flex-direction: column;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  }
+
+  .PC-BLOG {
+    margin-top: 3%;
+    padding: 5px;
+    margin-bottom: 3%;
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%; /* Make both content sections full width on smaller screens */
+    padding: 20px;
+  }
+
+  .left-content h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .content {
+    padding-left: 10px; /* Adjust left padding for smaller screens */
+  }
+
+  .content-one,
+  .content-two,
+  .content-three {
+    width: 100%;
+  }
+
+  .Continue-Reading {
+    padding: 10px;
+    margin-bottom: 3%;
+  }
+
+  .Continue-Reading h1 {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .continue-blogs {
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .BP-image {
+    width: 100%;
+    max-width: none;
+    margin-right: 0;
+  }
+}
